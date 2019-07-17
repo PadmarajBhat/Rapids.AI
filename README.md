@@ -17,3 +17,17 @@ To Explore the next generation of Spark
   !conda install -q -y --prefix /usr/local -c nvidia -c rapidsai \
   -c numba -c conda-forge -c defaults nvstrings=0.8 python=3.6 cudatoolkit=10.0
   ```
+
+  * Having 2 conda install in a cell, one after another is causing some issue:
+  ```
+  # install RAPIDS packages
+!conda install -q -y --prefix /usr/local -c conda-forge \
+  -c rapidsai-nightly/label/cuda10.0 -c nvidia/label/cuda10.0 \
+  cudf cuml
+
+
+!conda install -q -y --prefix /usr/local -c nvidia -c rapidsai \
+  -c numba -c conda-forge -c defaults nvstrings=0.8 python=3.6 cudatoolkit=10.0
+
+  ```
+  For the second conda command it throws conda command does not exist. However, re running the same cell successfully installs the 2nd install(nvidia)
