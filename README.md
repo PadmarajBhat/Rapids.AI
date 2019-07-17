@@ -11,3 +11,9 @@ To Explore the next generation of Spark
   ```
 * !pip install nvstrings
   * but the problem here is it requires libcudart.so.9.2
+  
+  * Finally, below installation step fixed nvstrings error
+  ```
+  !conda install -q -y --prefix /usr/local -c nvidia -c rapidsai \
+  -c numba -c conda-forge -c defaults nvstrings=0.8 python=3.6 cudatoolkit=10.0
+  ```
