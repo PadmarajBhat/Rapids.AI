@@ -31,6 +31,12 @@ To Explore the next generation of Spark
 
   ```
   For the second conda command it throws conda command does not exist. However, re running the same cell successfully installs the 2nd install(nvidia)
+  * found the solution for this:
+      prefix the bash command as that of the first and later issue the conda command
+      ```
+      !bash ./Miniconda3-4.5.4-Linux-x86_64.sh -b -f -p /usr/local
+      !conda install dask
+      ```
 
 
 * At times colab allocates the K80 gpu and our second cell check fails; we need to reset the environment (at times couple of times) and get ourself "Tesla T4"
