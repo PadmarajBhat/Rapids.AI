@@ -40,3 +40,4 @@ To Explore the next generation of Spark
 
 
 * At times colab allocates the K80 gpu and our second cell check fails; we need to reset the environment (at times couple of times) and get ourself "Tesla T4"
+  * https://medium.com/rapids-ai/rapids-can-now-be-accessed-on-databricks-unified-analytics-platform-666e42284bd1 blog indicates that NVIDIA pascal archicteture or higher GPU is what RAPIDS expect
