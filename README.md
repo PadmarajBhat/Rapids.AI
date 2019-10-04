@@ -45,3 +45,4 @@ To Explore the next generation of Spark
   * https://medium.com/rapids-ai/rapids-can-now-be-accessed-on-databricks-unified-analytics-platform-666e42284bd1 blog indicates that NVIDIA pascal archicteture or higher GPU is what RAPIDS expect
 
 * Dask ML : sfYXYzatTsJdHcMHIrSgRxt9aRm/lX7aP65r/sWUrq8+7Ehpt+zvnh2BSm+tycKJ
+* Sart(2) :https://www.analyticbridge.datasciencecentral.com/profiles/blogs/stochastic-processes-and-new-tests-of-randomness-application-to-c
